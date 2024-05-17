@@ -17,10 +17,16 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'https://ph-university.netlify.app'],
+    origin: '*',
     credentials: true,
   }),
 );
+// app.use(
+//   cors({
+//     origin:["https://ph-university.netlify.app" , "http://localhost:5173"],
+//     credentials: true,
+//   }),
+// );
 // app.use(cors({
 //   origin: 'http://localhost:5173',
 //   credentials: true
